@@ -4,6 +4,7 @@ var thirdgif = document.querySelectorAll('.thirdgif_item');
 var fourthgif = document.querySelectorAll('.fourthgif_item');
 var firsttext = document.querySelectorAll('.firsttext_item');
 var secondtext = document.querySelectorAll('.secondtext_item');
+var thirdtext = document.querySelectorAll('.thirdtext_item');
 
 var counter = 0;
 var intervalId = null;
@@ -19,6 +20,7 @@ function finish() {
     if (counter == 7) finished();
     else {
       firstgif[counter].style.display = "none";
+      thirdtext[counter].style.display = "none";
       fourthgif[counter].style.display = "none";
       thirdgif[counter].style.display = "none";
       secondgif[counter].style.display = "none";
@@ -32,6 +34,7 @@ function cascada() {
   counter++;
   if (counter == 7) finish();
   else {
+    thirdtext[counter].style.display = "flex";
     secondtext[counter].style.display = "flex";
     firsttext[counter].style.display = "flex";
     firstgif[counter].style.display = "block";
