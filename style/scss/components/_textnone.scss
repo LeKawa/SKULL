@@ -1,0 +1,108 @@
+.firsttext {
+  font-size: 48px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000000;
+  display: flex;
+  color: transparent;
+  letter-spacing: 4px;
+  font-family: 'FATFONT';
+
+  &_item {
+    z-index: 100;
+    width: 150px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    background-color: #FFFC31;
+    top: 50vh;
+    left: 30vw;
+    display: none;
+
+    &:nth-child(2) {
+      z-index: 101;
+      top: 55vh;
+      left: 30vw;
+    }
+    &:nth-child(3) {
+      z-index: 102;
+      top: 59vh;
+      left: 30vw;
+    }
+    &:nth-child(4) {
+      z-index: 103;
+      top: 62vh;
+      left: 30vw;
+    }
+    &:nth-child(5) {
+      z-index: 104;
+      top: 65vh;
+      left: 30vw;
+    }
+    &:nth-child(6) {
+      z-index: 105;
+      top: 68vh;
+      left: 30vw;
+    }
+    &:nth-child(7) {
+      z-index: 106;
+      top: 70vh;
+      left: 30vw;
+    }
+  }
+}
+.secondtext {
+  font-size: 48px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000000;
+  display: flex;
+  color: transparent;
+  letter-spacing: 4px;
+  font-family: 'FATFONT';
+
+  &_item {
+    z-index: 100;
+    width: 150px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    background-color: #E40066;
+    top: 10vh;
+    left: 10vw;
+    display: none;
+
+    &:nth-child(2) {
+      z-index: 101;
+      top: 15vh;
+      left: 10vw;
+    }
+    &:nth-child(3) {
+      z-index: 102;
+      top: 19vh;
+      left: 10vw;
+    }
+    &:nth-child(4) {
+      z-index: 103;
+      top: 19vh;
+      left: 10vw;
+    }
+    &:nth-child(5) {
+      z-index: 104;
+      top: 23vh;
+      left: 10vw;
+    }
+    &:nth-child(6) {
+      z-index: 105;
+      top: 26vh;
+      left: 10vw;
+    }
+    &:nth-child(7) {
+      z-index: 106;
+      top: 29vh;
+      left: 10vw;
+    }
+  }
+}

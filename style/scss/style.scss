@@ -1,0 +1,31 @@
+@import "./global/reset";
+@import "./mixins/breakpoints";
+@import "./components/about";
+@import "./components/image";
+@import "./components/Fixed";
+
+@import "./components/none";
+@import "./components/textnone";
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+//
+// ::-webkit-scrollbar {
+//   width: 10px;
+// }
+//
+// ::-webkit-scrollbar-track {
+//   background: #efefef;
+// }
+//
+// ::-webkit-scrollbar-thumb {
+//   background: black;
+// }
+//
+// body {
+//   background-color: #efefef;
+// }

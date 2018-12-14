@@ -1,0 +1,90 @@
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #000000;
+}
+@font-face {
+  font-family: 'FATFONT';
+  src: url("../../font/FREEFATFONT-Regular.otf");
+}
+
+.container {
+  position: fixed;
+  top: 80vh;
+  left: 44vw;
+  z-index: 90;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+h1 {
+  clip-path: inset(0% 0px 100% 1px);
+  font-family: 'FATFONT';
+  font-size: 48px;
+  letter-spacing: 4px;
+  cursor: pointer;
+}
+
+canvas {
+  z-index: 100;
+  opacity: 1;
+  position: fixed;
+  pointer-events: none;
+  background-color: transparent;
+}
+
+.mask {
+  z-index: 1000;
+  position: fixed;
+  top: 80vh;
+  left: 44vw;
+  color: red;
+  position: fixed;
+}
+
+.Main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-size: 48px;
+  position: fixed;
+  justify-content: center;
+
+  &_Text {
+    align-items: center;
+    letter-spacing: 4px;
+    width: 80%;
+    display: flex;
+    height: 100%;
+    font-family: 'FATFONT';
+    text-align: center;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #29BF12;
+
+    & > p {
+      & > span {
+        transition: all 0.3s ease-Out;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #E40066;
+        cursor: url(http://www.javascriptkit.com/dhtmltutors/cursor-hand.gif), auto;
+
+        &:hover {
+          font-style: italic;
+        }
+
+        &:nth-child(2) {
+          transition: all 0.3s ease-Out;
+          -webkit-text-stroke-width: 1px;
+          -webkit-text-stroke-color: #F5FFC6;
+          cursor: url(http://www.javascriptkit.com/dhtmltutors/cursor-hand.gif), auto;
+
+          &:hover {
+            color: #F5FFC6;
+            -webkit-text-stroke-width: 0;
+          }
+        }
+      }
+    }
+  }
+}

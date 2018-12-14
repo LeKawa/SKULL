@@ -1,0 +1,499 @@
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:after, blockquote:before {
+  content: '';
+  content: none; }
+
+q:after, q:before {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #000000; }
+
+@font-face {
+  font-family: 'FATFONT';
+  src: url("../../font/FREEFATFONT-Regular.otf"); }
+.container {
+  position: fixed;
+  top: 80vh;
+  left: 44vw;
+  z-index: 90;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white; }
+
+h1 {
+  clip-path: inset(0% 0px 100% 1px);
+  font-family: 'FATFONT';
+  font-size: 48px;
+  letter-spacing: 4px;
+  cursor: pointer; }
+
+canvas {
+  z-index: 100;
+  opacity: 1;
+  position: fixed;
+  pointer-events: none;
+  background-color: transparent; }
+
+.mask {
+  z-index: 1000;
+  position: fixed;
+  top: 80vh;
+  left: 44vw;
+  color: red;
+  position: fixed; }
+
+.Main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-size: 48px;
+  position: fixed;
+  justify-content: center; }
+  .Main_Text {
+    align-items: center;
+    letter-spacing: 4px;
+    width: 80%;
+    display: flex;
+    height: 100%;
+    font-family: 'FATFONT';
+    text-align: center;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #29BF12; }
+    .Main_Text > p > span {
+      transition: all 0.3s ease-Out;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #E40066;
+      cursor: url(http://www.javascriptkit.com/dhtmltutors/cursor-hand.gif), auto; }
+      .Main_Text > p > span:hover {
+        font-style: italic; }
+      .Main_Text > p > span:nth-child(2) {
+        transition: all 0.3s ease-Out;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #F5FFC6;
+        cursor: url(http://www.javascriptkit.com/dhtmltutors/cursor-hand.gif), auto; }
+        .Main_Text > p > span:nth-child(2):hover {
+          color: #F5FFC6;
+          -webkit-text-stroke-width: 0; }
+
+.Fixed {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  font-size: 28px; }
+  .Fixed_Text {
+    clip-path: inset(0px 0px 100% 1px);
+    z-index: 100;
+    position: fixed; }
+  .Fixed_Svg {
+    opacity: 0;
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .Fixed_Svg > svg {
+      width: 270px;
+      height: 54px; }
+  .Fixed_Svg1 {
+    position: fixed;
+    z-index: 8;
+    display: flex;
+    opacity: 0;
+    justify-content: center;
+    align-items: center; }
+    .Fixed_Svg1 > svg {
+      margin-left: 15px;
+      margin-bottom: 15px;
+      width: 270px;
+      height: 54px; }
+  .Fixed_Svg2 {
+    opacity: 0;
+    position: fixed;
+    z-index: 7;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .Fixed_Svg2 > svg {
+      margin-left: 30px;
+      margin-bottom: 30px;
+      width: 270px;
+      height: 54px; }
+
+.firstgif_item {
+  width: 200px;
+  position: absolute;
+  z-index: 2;
+  top: 20vh;
+  display: none;
+  left: 15vw; }
+  .firstgif_item:nth-child(2) {
+    z-index: 3;
+    top: 22vh;
+    left: 15vw; }
+  .firstgif_item:nth-child(3) {
+    z-index: 4;
+    top: 24vh;
+    left: 15vw; }
+  .firstgif_item:nth-child(4) {
+    z-index: 5;
+    top: 26vh;
+    left: 15vw; }
+  .firstgif_item:nth-child(5) {
+    z-index: 6;
+    top: 28vh;
+    left: 15vw; }
+  .firstgif_item:nth-child(6) {
+    z-index: 7;
+    top: 30vh;
+    left: 15vw; }
+  .firstgif_item:nth-child(7) {
+    z-index: 8;
+    top: 32vh;
+    left: 15vw; }
+  .firstgif_item > img {
+    width: 100%;
+    height: auto; }
+
+.secondgif_item {
+  display: none;
+  width: 350px;
+  position: absolute;
+  z-index: 2;
+  top: 10vh;
+  left: 60vw; }
+  .secondgif_item:nth-child(2) {
+    width: 350px;
+    display: none;
+    position: absolute;
+    z-index: 3;
+    top: 12vh;
+    left: 60vw; }
+  .secondgif_item:nth-child(3) {
+    width: 350px;
+    display: none;
+    position: absolute;
+    z-index: 4;
+    top: 14vh;
+    left: 60vw; }
+  .secondgif_item:nth-child(4) {
+    width: 350px;
+    display: none;
+    position: absolute;
+    z-index: 5;
+    top: 16vh;
+    left: 60vw; }
+  .secondgif_item:nth-child(5) {
+    width: 350px;
+    display: none;
+    position: absolute;
+    z-index: 6;
+    top: 18vh;
+    left: 60vw; }
+  .secondgif_item:nth-child(6) {
+    width: 350px;
+    display: none;
+    position: absolute;
+    z-index: 7;
+    top: 20vh;
+    left: 60vw; }
+  .secondgif_item:nth-child(7) {
+    width: 350px;
+    display: none;
+    position: absolute;
+    z-index: 8;
+    top: 22vh;
+    left: 60vw; }
+  .secondgif_item > img {
+    width: 100%;
+    height: auto; }
+
+.thirdgif_item {
+  width: 200px;
+  position: absolute;
+  z-index: 2;
+  top: 50vh;
+  display: none;
+  left: 29vw; }
+  .thirdgif_item:nth-child(2) {
+    z-index: 3;
+    top: 52vh;
+    left: 29vw; }
+  .thirdgif_item:nth-child(3) {
+    z-index: 4;
+    top: 54vh;
+    left: 29vw; }
+  .thirdgif_item:nth-child(4) {
+    z-index: 5;
+    top: 56vh;
+    left: 29vw; }
+  .thirdgif_item:nth-child(5) {
+    z-index: 6;
+    top: 58vh;
+    left: 29vw; }
+  .thirdgif_item:nth-child(6) {
+    z-index: 7;
+    top: 60vh;
+    left: 29vw; }
+  .thirdgif_item:nth-child(7) {
+    z-index: 8;
+    top: 62vh;
+    left: 29vw; }
+  .thirdgif_item > img {
+    width: 100%;
+    height: auto; }
+
+.fourthgif_item {
+  width: 200px;
+  position: absolute;
+  z-index: 2;
+  top: 45vh;
+  display: none;
+  left: 65vw; }
+  .fourthgif_item:nth-child(2) {
+    z-index: 3;
+    top: 47vh;
+    left: 65vw; }
+  .fourthgif_item:nth-child(3) {
+    z-index: 4;
+    top: 49vh;
+    left: 65vw; }
+  .fourthgif_item:nth-child(4) {
+    z-index: 5;
+    top: 51vh;
+    left: 65vw; }
+  .fourthgif_item:nth-child(5) {
+    z-index: 6;
+    top: 53vh;
+    left: 65vw; }
+  .fourthgif_item:nth-child(6) {
+    z-index: 7;
+    top: 55vh;
+    left: 65vw; }
+  .fourthgif_item:nth-child(7) {
+    z-index: 8;
+    top: 57vh;
+    left: 65vw; }
+  .fourthgif_item > img {
+    width: 100%;
+    height: auto; }
+
+.firsttext {
+  font-size: 48px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000000;
+  display: flex;
+  color: transparent;
+  letter-spacing: 4px;
+  font-family: 'FATFONT'; }
+  .firsttext_item {
+    z-index: 100;
+    width: 150px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    background-color: #FFFC31;
+    top: 50vh;
+    left: 30vw;
+    display: none; }
+    .firsttext_item:nth-child(2) {
+      z-index: 101;
+      top: 55vh;
+      left: 30vw; }
+    .firsttext_item:nth-child(3) {
+      z-index: 102;
+      top: 59vh;
+      left: 30vw; }
+    .firsttext_item:nth-child(4) {
+      z-index: 103;
+      top: 62vh;
+      left: 30vw; }
+    .firsttext_item:nth-child(5) {
+      z-index: 104;
+      top: 65vh;
+      left: 30vw; }
+    .firsttext_item:nth-child(6) {
+      z-index: 105;
+      top: 68vh;
+      left: 30vw; }
+    .firsttext_item:nth-child(7) {
+      z-index: 106;
+      top: 70vh;
+      left: 30vw; }
+
+.secondtext {
+  font-size: 48px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000000;
+  display: flex;
+  color: transparent;
+  letter-spacing: 4px;
+  font-family: 'FATFONT'; }
+  .secondtext_item {
+    z-index: 100;
+    width: 150px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    background-color: #E40066;
+    top: 10vh;
+    left: 10vw;
+    display: none; }
+    .secondtext_item:nth-child(2) {
+      z-index: 101;
+      top: 15vh;
+      left: 10vw; }
+    .secondtext_item:nth-child(3) {
+      z-index: 102;
+      top: 19vh;
+      left: 10vw; }
+    .secondtext_item:nth-child(4) {
+      z-index: 103;
+      top: 19vh;
+      left: 10vw; }
+    .secondtext_item:nth-child(5) {
+      z-index: 104;
+      top: 23vh;
+      left: 10vw; }
+    .secondtext_item:nth-child(6) {
+      z-index: 105;
+      top: 26vh;
+      left: 10vw; }
+    .secondtext_item:nth-child(7) {
+      z-index: 106;
+      top: 29vh;
+      left: 10vw; }
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*# sourceMappingURL=style.css.map */
