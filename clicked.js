@@ -12,7 +12,6 @@ var intervalId = null;
 function finish() {
   clearInterval(intervalId);
   counter = 0;
-
   intervalIId = setInterval(test, 100);
 
   function test() {
@@ -34,6 +33,7 @@ function cascada() {
   counter++;
   if (counter == 7) finish();
   else {
+    console.log('coucou');
     thirdtext[counter].style.display = "flex";
     secondtext[counter].style.display = "flex";
     firsttext[counter].style.display = "flex";
@@ -47,12 +47,8 @@ function cascada() {
 function start() {
   skullBite()
   intervalId = setInterval(cascada, 100);
+
 }
-
-
-
-
-
 
 function finished() {
   clearInterval(intervalIId);

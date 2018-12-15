@@ -194,6 +194,15 @@ canvas {
         .Main_Text > p > span:nth-child(2):hover {
           color: #F5FFC6;
           -webkit-text-stroke-width: 0; }
+      .Main_Text > p > span:nth-child(3) {
+        font-style: italic;
+        transition: all 0.3s ease-Out;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: white;
+        cursor: url(http://www.javascriptkit.com/dhtmltutors/cursor-hand.gif), auto; }
+        .Main_Text > p > span:nth-child(3):hover {
+          color: white;
+          -webkit-text-stroke-width: 0; }
 
 .Fixed {
   height: 100vh;

@@ -84,6 +84,18 @@ canvas {
             -webkit-text-stroke-width: 0;
           }
         }
+        &:nth-child(3) {
+          font-style: italic;
+          transition: all 0.3s ease-Out;
+          -webkit-text-stroke-width: 1px;
+          -webkit-text-stroke-color: white;
+          cursor: url(http://www.javascriptkit.com/dhtmltutors/cursor-hand.gif), auto;
+
+          &:hover {
+            color: white;
+            -webkit-text-stroke-width: 0;
+          }
+        }
       }
     }
   }
